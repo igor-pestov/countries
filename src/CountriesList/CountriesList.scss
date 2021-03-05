@@ -1,0 +1,100 @@
+.countries__list {
+  width: 50%;
+  height: 30rem;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  background: #c6c7d47b;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.076),
+    0 17px 50px 0 rgba(0, 0, 0, 0.118);
+  caption {
+    height: 70px;
+    border-radius: 10px;
+    background-color: #c6c7d47b;
+  }
+
+  .card__country {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.name__item {
+  width: 50%;
+  height: 50px;
+  text-align: center;
+}
+.population__item {
+  width: 50%;
+  height: 50px;
+  text-align: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: left;
+  border-bottom: 2px solid  #413e3e;
+  ;
+}
+
+thead button {
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  border: 0;
+  border-radius: 10px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  padding: 0.5em;
+  margin-bottom: 1px;
+  color: #413e3e;
+  background-color: #c6c7d47b;
+}
+
+thead button.ascending::after {
+  content: "▼";
+  display: inline-block;
+  margin-left: 1em;
+}
+
+thead button.descending::after {
+  content: "▲";
+  display: inline-block;
+  margin-left: 1em;
+}
+
+tbody td {
+  padding: 0.5em;
+  border-bottom: 1px solid #ccc;
+}
+
+tbody tr:hover {
+  background-color: #c6c7d47b;
+}
+
+::-webkit-scrollbar {
+
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d8d8d8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(118, 118, 118);
+}
+@media (max-width: 900px) and (min-width: 320px) {
+  .countries__list {
+    width: 100%;
+    padding: 0;
+  }
+}
